@@ -1,0 +1,6 @@
+{
+  "name": "E-wallet Go - Agent & Admin Portal",
+  "description": "E-wallet Go Agent App, E-wallet Admin Console, and Customer Wallet with instant PWA download and standalone apps.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

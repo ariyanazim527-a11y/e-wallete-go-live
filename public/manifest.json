@@ -1,0 +1,56 @@
+{
+  "id": "/",
+  "name": "E-wallet Go - Agent & Admin Portal",
+  "short_name": "E-wallet Go",
+  "description": "E-wallet Go Agent App, E-wallet Admin Console, and Digital Wallet Platform",
+  "start_url": "/#/customer",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f172a",
+  "theme_color": "#0d9488",
+  "categories": ["finance", "business", "utilities"],
+  "icons": [
+    {
+      "src": "/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "E-wallet Go Agent App",
+      "short_name": "Agent App",
+      "description": "Open E-wallet Go Agent Terminal",
+      "url": "/#/agent",
+      "icons": [{ "src": "/icon-192.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "E-wallet Admin Console",
+      "short_name": "Admin",
+      "description": "Open Super Admin Control Panel",
+      "url": "/#/admin",
+      "icons": [{ "src": "/icon-192.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Customer Wallet",
+      "short_name": "Customer",
+      "description": "Open Customer Wallet & Store",
+      "url": "/#/customer",
+      "icons": [{ "src": "/icon-192.svg", "sizes": "192x192" }]
+    }
+  ]
+}

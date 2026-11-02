@@ -1,0 +1,90 @@
+import { ManagedUser, KycRequest, SystemFeeConfig } from '../types/admin.ts';
+
+export const INITIAL_MANAGED_USERS: ManagedUser[] = [
+  {
+    id: 'usr-1',
+    name: 'Ariyan Azim',
+    phone: '01712-345678',
+    nidNumber: '1995267182910',
+    balance: 24850,
+    status: 'active',
+    registeredDate: '12 Jan 2025',
+    kycDocType: 'NID',
+    totalTransactions: 142,
+  },
+  {
+    id: 'usr-2',
+    name: 'Nusrat Jahan',
+    phone: '01899-876543',
+    nidNumber: '1998492019283',
+    balance: 8420,
+    status: 'active',
+    registeredDate: '04 Mar 2025',
+    kycDocType: 'NID',
+    totalTransactions: 68,
+  },
+  {
+    id: 'usr-3',
+    name: 'Tanvir Ahmed',
+    phone: '01711-223344',
+    nidNumber: '1989472910392',
+    balance: 51200,
+    status: 'active',
+    registeredDate: '18 Jun 2025',
+    kycDocType: 'Passport',
+    totalTransactions: 310,
+  },
+  {
+    id: 'usr-4',
+    name: 'Kamrul Hasan',
+    phone: '01900-445566',
+    nidNumber: '1992482019482',
+    balance: 140,
+    status: 'pending_kyc',
+    registeredDate: 'Yesterday',
+    kycDocType: 'NID',
+    totalTransactions: 3,
+  },
+  {
+    id: 'usr-5',
+    name: 'Suspicious Account #89',
+    phone: '01600-998877',
+    nidNumber: '1984201938201',
+    balance: 120500,
+    status: 'frozen',
+    registeredDate: '10 Oct 2026',
+    kycDocType: 'NID',
+    totalTransactions: 9,
+  },
+];
+
+export const INITIAL_KYC_REQUESTS: KycRequest[] = [
+  {
+    id: 'kyc-101',
+    userId: 'usr-4',
+    userName: 'Kamrul Hasan',
+    userPhone: '01900-445566',
+    docType: 'Smart National ID (NID)',
+    docNumber: '5529102938',
+    submittedAt: 'Today, 10:30 AM',
+    status: 'pending',
+  },
+  {
+    id: 'kyc-102',
+    userId: 'usr-6',
+    userName: 'Mehedi Hasan Shawon',
+    userPhone: '01511-998877',
+    docType: 'Bangladesh Passport',
+    docNumber: 'EA0928172',
+    submittedAt: 'Today, 8:15 AM',
+    status: 'pending',
+  },
+];
+
+export const INITIAL_FEE_CONFIG: SystemFeeConfig = {
+  sendMoneyFee: 5,
+  cashOutFeePercentage: 1.5,
+  merchantPayFeePercentage: 0.0,
+  dailyTransactionLimit: 50000,
+  maintenanceMode: false,
+};
